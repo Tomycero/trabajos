@@ -1,0 +1,266 @@
+@font-face {
+    font-family: carbon;
+    src: url(./fuentes/CarbonMono.ttf),
+         url(./fuentes/carbonmono-webfont.woff),
+         url(./fuentes/carbonmono-webfont.woff2);
+}
+
+@font-face {
+    font-family: grunge;
+    src: url(./fuentes/grunge.ttf),
+         url(./fuentes/grunge-webfont.woff),
+         url(./fuentes/grunge-webfont.woff2);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 230px 730px 260px;
+    grid-template-rows: 110px 280px 250px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    width: 1240px;
+    height: 720px;
+    margin: 15px auto;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(./imagenes/paginaprincipal/logopagina.png);
+    background-size: 220px 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 1 / 3;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+    background-image: url(./imagenes/paginaprincipal/cartel.png);
+}
+
+.div4 {
+    grid-area: 2 / 1 / 2 / 2;
+    background-image: url(./imagenes/paginaprincipal/placametal.jpg);
+    background-size: 270px 220px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+body {
+    background-image: url(./imagenes/paginaprincipal/ladrillosfondo.jpg);
+}
+
+.caption {
+    color: white;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fondoauto {
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+}
+
+.subirarchivo {
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    text-align: left;
+    padding: 50px 0px 0px 5px;
+    display: block;
+}
+
+.metalfondo {
+    height: 270px;
+    width: 220px;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+}
+
+.desplegar {
+    color: rgb(209, 40, 17);
+    font-size: 1.3rem;
+    padding: 0px 5px;
+    margin: 5px 0px;
+    font-family: carbon;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.desplegar:hover {
+    color: rgb(167, 29, 11);
+    font-size: 1.3rem;
+    padding: 0px 5px;
+    margin: 5px 0px;
+    font-family: carbon;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.lista {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+video {
+    object-fit: cover;
+}
+
+.subseccion1 {
+    color: rgb(196, 0, 0);
+    font-size: 1rem;
+    padding: 0px 25px;
+    margin: 5px 0px;
+    font-family: carbon;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    display: none;
+}
+
+.subseccion2 {
+    color: rgb(196, 0, 0);
+    font-size: 1rem;
+    padding: 0px 25px;
+    margin: 5px 0px;
+    font-family: carbon;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    display: none;
+}
+
+.subseccion3 {
+    color: rgb(196, 0, 0);
+    font-size: 1rem;
+    padding: 0px 25px;
+    margin: 5px 0px;
+    font-family: carbon;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    display: none;
+}
+
+.sinresultados {
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-family: grunge;
+    text-shadow:
+        -1.4px -1.4px 0 #000,
+        1.4px -1.4px 0 #000,
+        -1.4px 1.4px 0 #000,
+        1.4px 1.4px 0 #000;
+    text-align: center;
+    padding: 50px 75px 0px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.elegircategoria {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: grunge;
+    text-shadow:
+        -1.2px -1.2px 0 #000,
+        1.2px -1.2px 0 #000,
+        -1.2px 1.2px 0 #000,
+        1.2px 1.2px 0 #000;
+    text-align: center;
+    padding: 0px 75px 0px 0px;
+    margin: 5px;
+}
+
+.galeriazona {
+    height: 530px;
+    margin: 0px;
+}
+
+#picadasfotos {
+    display: none;
+}
+
+#picadasvideos {
+    display: none;
+}
+
+#carrerasfotos {
+    display: none;
+}
+
+#carrerasvideos {
+    display: none;
+}
+
+#rallyfotos {
+    display: none;
+}
+
+#rallyvideos {
+    display: none;
+}
+
+.elementogaleria {
+    height: 125px;
+    width: 125px;
+    border: 10px groove rgb(220, 220, 220);
+    margin: 1px;
+}
+
+.elementogaleria:hover {
+    box-shadow: 0 0 2px 1.5px rgba(0, 140, 187, 0.63);
+}
+
+.enviar {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-family: grunge;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.archivos {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-family: grunge;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    padding: 0px;
+    display: inline-block;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./scripts.js"></script>
+    <title>Proyecto HTML Tomás García</title>
+</head>
+<body class="parent">
+    <div class="div1"></div>
+    <div class="div2">
+        <img class="fondoauto" src="./imagenes/paginaprincipal/fondoauto.png"> <figure class="caption">elgarajedetomi.com</figure>
+    </div>
+    <div class="div3">
+        <form class="subirarchivo">
+            <label for="archivos" class="archivos">Elegir archivo</label>
+            <br>
+            <label for="enviar" class="enviar">Enviar archivo</label>
+            <input id="archivos" style="display: none;" type="file">
+            <input id="enviar" style="display: none;" type="submit">
+          </form>
+    </div>
+    <div class="div4">
+        <nav id="navegador">
+            <ul class="lista">
+                <li class="desplegar" onclick="desplegar1()"><button id="boton1" onclick="desplegado1()">►PICADAS</button></li>
+                    <div class="subseccion1"><button id="fotosboton1">FOTOS</button></div>
+                    <div class="subseccion1"><button id="videosboton1">VIDEOS</button></div>
+                <li class="desplegar" onclick="desplegar2()"><button id="boton2" onclick="desplegado2()">►CARRERAS</button></li>
+                    <div class="subseccion2"><button id="fotosboton2">FOTOS</button></div>
+                    <div class="subseccion2"><button id="videosboton2">VIDEOS</button></div>
+                <li class="desplegar" onclick="desplegar3()"><button id="boton3" onclick="desplegado3()">►RALLY</button></li>
+                    <div class="subseccion3"><button id="fotosboton3">FOTOS</button></div>
+                    <div class="subseccion3"><button id="videosboton3">VIDEOS</button></div>
+            </ul>
+        </nav>
+    </div>
+    <div class="div5">
+        <div class="galeriazona">
+            <div id="picadasfotos">
+                <a target="_blank" href="imagenes/picadasfotos/cobaltss.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/cobaltss.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/cobaltss1.png"><img class="elementogaleria" src="./imagenes/picadasfotos/cobaltss1.png"></a>
+                <a target="_blank" href="imagenes/picadasfotos/cobaltss2.png"><img class="elementogaleria" src="./imagenes/picadasfotos/cobaltss2.png"></a>
+                <a target="_blank" href="imagenes/picadasfotos/cobaltss3.png"><img class="elementogaleria" src="./imagenes/picadasfotos/cobaltss3.png"></a>
+                <a target="_blank" href="imagenes/picadasfotos/corsadrag.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/corsadrag.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat128drag.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat128drag.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat128drag1.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat128drag1.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat128drag2.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat128drag2.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat128drag3.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat128drag3.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat128drag4.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat128drag4.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat147drag.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat147drag.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat147drag1.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat147drag1.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat147drag2.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat147drag2.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fiat147drag3.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fiat147drag3.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/f100drag.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/f100drag.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fititodrag.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fititodrag.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fititodrag1.jpg"><img class="elementogaleria" src="./imagenes/picadasfotos/fititodrag1.jpg"></a>
+                <a target="_blank" href="imagenes/picadasfotos/fititodrag2.png"><img class="elementogaleria" src="./imagenes/picadasfotos/fititodrag2.png"></a>
+            </div>
+            <div id="picadasvideos">
+                <a target="_blank" href="videos/picadasvideos/duna.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/duna.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/f100.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/f100.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/f1002.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/f1002.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/falcon.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/falcon.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiat147.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiat147.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiat600.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiat600.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiatuno.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiatuno.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/cobaltss.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/cobaltss.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiat1472.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiat1472.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiat6002.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiat6002.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiat6003.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiat6003.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/fiatuno2.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/fiatuno2.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/cobaltss2.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/cobaltss2.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/cobaltss3.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/cobaltss3.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/renault12.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/renault12.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/renault19.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/renault19.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/dodgepolara.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/dodgepolara.webm"></video></a>
+                <a target="_blank" href="videos/picadasvideos/saveiroviturro.webm"><video class="elementogaleria" type="video/webm" src="videos/picadasvideos/saveiroviturro.webm"></video></a>
+            </div>
+            <div id="carrerasfotos">
+                <a target="_blank" href="imagenes/carrerasfotos/190e.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/190e.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/190e2.png"><img class="elementogaleria" src="imagenes/carrerasfotos/190e2.png"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/procar.png"><img class="elementogaleria" src="imagenes/carrerasfotos/procar.png"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/mustang.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/mustang.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/procar2.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/procar2.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/cobaltss.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/cobaltss.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/cobaltss2.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/cobaltss2.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/dodge1500.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/dodge1500.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/renault19.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/renault19.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/chevelless.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/chevelless.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/dodge15002.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/dodge15002.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/porsche911.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/porsche911.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/renault192.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/renault192.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/chevelless2.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/chevelless2.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/challengerrt.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/challengerrt.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/challengerrt2.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/challengerrt2.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/pontiacfirebird.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/pontiacfirebird.jpg"></a>
+                <a target="_blank" href="imagenes/carrerasfotos/pontiacfirebird2.jpg"><img class="elementogaleria" src="imagenes/carrerasfotos/pontiacfirebird2.jpg"></a>
+            </div>
+            <div id="carrerasvideos">
+                <a target="_blank" href="videos/carrerasvideos/405.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/405.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/911.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/911.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/crx.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/crx.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/r32.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/r32.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/r34.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/r34.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/190e.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/190e.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/9112.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/9112.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/mini.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/mini.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/p106.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/p106.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/p406.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/p406.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/civic.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/civic.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/accord.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/accord.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/laguna.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/laguna.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/mustang.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/mustang.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/transam.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/transam.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/cobaltss.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/cobaltss.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/firebird.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/firebird.webm"></video></a>
+                <a target="_blank" href="videos/carrerasvideos/cobaltss2.webm"><video class="elementogaleria" type="video/webm" src="videos/carrerasvideos/cobaltss2.webm"></video></a>
+            </div>
+            <div id="rallyfotos">
+                <a target="_blank" href="imagenes/rallyfotos/22b.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/22b.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/r19.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/r19.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/wrx.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/wrx.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/22b2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/22b2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/p206.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/p206.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/r192.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/r192.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/wrx2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/wrx2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/corsa2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/corsa2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/lancer.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/lancer.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/lancer2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/lancer2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/quattro.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/quattro.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/r5turbo.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/r5turbo.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/quattro2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/quattro2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/r5turbo2.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/r5turbo2.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/lancia037.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/lancia037.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/lancia0372.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/lancia0372.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/corsa.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/corsa.jpg"></a>
+                <a target="_blank" href="imagenes/rallyfotos/p2062.jpg"><img class="elementogaleria" src="imagenes/rallyfotos/p2062.jpg"></a>
+            </div>
+            <div id="rallyvideos">
+                <a target="_blank" href="videos/rallyvideos/evo.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/evo.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/clio.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/clio.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/corsa.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/corsa.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/corsa2.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/corsa2.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/lancer.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/lancer.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/impreza.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/impreza.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/quattro.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/quattro.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/stratos.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/stratos.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/impreza2.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/impreza2.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/quattro2.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/quattro2.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/renault5.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/renault5.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/lancia037.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/lancia037.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/renault11.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/renault11.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/renault19.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/renault19.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/renault52.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/renault52.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/lancia0372.webm"><video class="elementogaleria" preload="metadata" type="video/webm" src="videos/rallyvideos/lancia0372.webm#t=2"></video></a>
+                <a target="_blank" href="videos/rallyvideos/renault192.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/renault192.webm"></video></a>
+                <a target="_blank" href="videos/rallyvideos/lanciadelta.webm"><video class="elementogaleria" type="video/webm" src="videos/rallyvideos/lanciadelta.webm"></video></a>
+            </div>
+            <p class="sinresultados">No hay nada para mostrar actualmente</p>
+            <p class="elegircategoria">Seleccioná una categoría del menú<br>para ver la galería</p>
+        </div>
+    </div>
+</body>
+</html>
